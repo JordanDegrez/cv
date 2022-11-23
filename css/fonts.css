@@ -1,0 +1,28 @@
+/* rubik-300 - latin */
+@font-face {
+    font-family: 'Rubik_light';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../elements/fonts/rubik-v21-latin-300.woff') format('woff');
+  }
+  /* rubik-regular - latin */
+  @font-face {
+    font-family: 'Rubik_regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../elements/fonts/rubik-v21-latin-regular.woff') format('woff');
+  }
+  /* rubik-700 - latin */
+  @font-face {
+    font-family: 'Rubik_bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../elements/fonts/rubik-v21-latin-700.woff') format('woff');
+  }
+  /* rubik-900 - latin */
+  @font-face {
+    font-family: 'Rubik_black';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../elements/fonts/rubik-v21-latin-900.woff') format('woff');
+  }
