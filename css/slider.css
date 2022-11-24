@@ -3,15 +3,14 @@
     height: 600px;
     overflow: hidden;
 }
-  
-  input {
+input {
     position: absolute;  
     opacity: 0;
     margin-top: 95vh;
     cursor: pointer;
-  }
-  
-  label {
+}
+
+label {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -23,13 +22,11 @@
     cursor: pointer;
     transition-duration: .4s;
     box-shadow: 0 0 20px 0 #000;
-  }
-  
-  input:checked + label{
+}
+input:checked + label{
     background-color: white;
-  }
-  
-  input + label::after{
+}
+input + label::after{
     content: '';
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512' width='100' style='fill:white'%3E%3Cpath d='M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z' /%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -44,36 +41,30 @@
     top: 0;
     left: 0;
     z-index: 20;
-  }
-  
-  input + label:hover::after {
+}
+input + label:hover::after {
     background-size: 90px 90px;
-  }
-  
-  input:checked + label::after {
+}
+input:checked + label::after {
     background-image: none;
     width: 100vw;
     left: 0;
     z-index: 10;
-  }
-  
-  input:checked + label + .slide ~ input + label::after {
+}
+input:checked + label + .slide ~ input + label::after {
     display: none;
-  }
-  
-  input:checked + label + .slide + input + label::after {
+}
+input:checked + label + .slide + input + label::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512' width='100' fill='white'%3E%3Cpath d='M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z' /%3E%3C/svg%3E");
     display: block;
     width: 80px;
     right: 0;
     left: auto;
-  }
-  
-  input:focus + label{
+}
+input:focus + label{
     box-shadow: 0 0 0 2px teal, 0 0 18px white;
-  }
-  
-  .slide {
+}
+.slide {
     position: absolute;
     background-position: center;
     background-size: cover;
@@ -86,29 +77,16 @@
     transform: translateX(-100%);
     transition-duration: .4s;
     opacity: 1;
-  }
-  
-  input:checked ~ .slide {
+}
+input:checked ~ .slide {
     transform: translateX(100%);
-  }
-  
-  input:checked + label + .slide {
+}
+input:checked + label + .slide {
     transform: translateX(0);
     opacity: 1;
-  }
-  
-  .bg1{
-    background-image: url(/cv/elements/medias/Capture.PNG);
-  }
-  .bg2{
-    background-image: url(/cv/elements/medias/tudiante-tais-toi-et-donne-moi-ton-argent.jpg);
-  }
-  .bg3{
-    background-image: url(/cv/elements/medias/livai.png);
-  }
-  .bg4{
-    background-image: url(/cv/elements/medias/Capture.PNG);
-  }
-  .bg5{
-    background-image: url(/cv/elements/medias/Twitch_headpic.jpg);
-  }
+}
+.bg1{background-image: url(/cv/elements/medias/Capture.PNG);}
+.bg2{background-image: url(/cv/elements/medias/tudiante-tais-toi-et-donne-moi-ton-argent.jpg);}
+.bg3{background-image: url(/cv/elements/medias/livai.png);}
+.bg4{background-image: url(/cv/elements/medias/Capture.PNG);}
+.bg5{background-image: url(/cv/elements/medias/Twitch_headpic.jpg);}
